@@ -1,0 +1,49 @@
+/* start Blog */
+:root {
+    --mainColor: hsl(180, 93%, 27%);
+}
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    text-align: revert;
+    direction: rtl;
+}
+.breadcrumb {
+    margin: 0;
+    justify-content: flex-end;
+}
+.breadcrumb-item  + .breadcrumb-item::before {
+float: right;
+}
+.blog .jumbotron {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--mainColor);
+}
+.blog .jumbotron .blog-desc
+ {
+  /* width: 55%; */
+  flex: 3;
+  margin-left:40px;
+
+}
+.blog .jumbotron .blog-desc h4 {
+font-size: 18px;
+}
+
+.blog .jumbotron .blog-img  {
+    /* width: 40%; */
+    flex: 2;
+}
+.blog .jumbotron img {
+    width: 250px;
+}
+
+/* End Blog */
+

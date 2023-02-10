@@ -1,0 +1,153 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,900&family=Open+Sans:wght@300;400;500;600&family=Oswald:wght@200;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Tajawal:wght@200;300;400;500;700;800&display=swap');
+
+:root {
+    --mainColor: hsl(rgb(2, 2, 28));
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    text-align: revert;
+    direction: rtl;
+}
+/* Start General components */
+.section {
+    padding: 80px 0;
+}
+
+.navbar {
+    box-shadow: 1px 2px 5px #ebebeb;
+}
+.section-title {
+    position: relative;
+  background-color: rgb(2, 2, 28);
+  display: inline-block;
+  color: #fff;
+ 
+}
+.section-title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    height: 5px;
+    width: 70%;
+    background-color: var(--mainColor);
+}
+
+/* End General components */
+
+
+/* start Home  */
+.home {
+    height: 600px;
+    background-size: cover;
+    background-image: url(assets/img2.jpg);
+    padding: 1px; /*for the collapsing between the parent and the child for not applied the margin of the child to the parent*/
+}
+.home-item {
+     width: 50%;
+    margin-right: auto;
+    margin-top: 15%;
+}
+@media(max-width: 768px) {
+.home-item {
+    width: 100%;
+}
+.home {
+    height: 400px;
+}
+}
+.home-item h2 {
+    color: #fff;
+    font-size: 45px;
+}
+.home-item p {
+    color: #fff;
+    font-size: 25px;
+}
+
+/* End Home  */
+
+/* Start About  */
+.about-item p {
+    margin: 50px 0;
+}
+.about-item button {
+    margin-bottom: 15px;
+}
+
+
+
+/* End About  */
+/* Start News  */
+
+.news .news-left,
+.footer-left
+ {
+    display: flex;
+    align-items: center;
+}
+.news .news-left img,
+.footer-left img {
+    max-width: 100px;
+    margin-left: 20px;
+}
+/* End News  */
+
+/* Start Subscribe  */
+.subscribe {
+    height: 450px;
+    background-image: url(assets/img3.jpg);
+   background-size: cover;
+   padding: 1px; /* we did for the collapsing*/
+  position: relative;
+}
+.subscribe-item {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.subscribe-item h2 {
+    font-size: 40px;
+}
+.subscribe-item .form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.subscribe-item .form input{
+    width: 80%;
+}
+.subscribe-item button{
+width: 15%;
+}
+/* End Subscribe  */
+
+/* Start Footer  */
+footer {
+      background-color: rgb(2, 2, 28);
+  color: #fff;
+}
+footer img {
+    width: 100px;
+}
+/* .footer-left {
+    font-size: 12px;
+} */
+
+.footer-left img {
+    max-width: 80px;
+}
+/* End Footer  */
+
+
+
+
